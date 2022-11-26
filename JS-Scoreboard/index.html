@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>JS - Scoreboard</title>
+</head>
+<body>
+
+
+<div class="displayMainScore">
+<!-- HOME SCOREBOARD -->
+<div class="display-left" data-aos="fade-right">
+
+    <h2 class="style-main-title">HOME</h2>
+    <div class="display-score-box">
+        <h2 class="style-score-number" id="score-number">0</h2>
+    </div>
+
+    <div class="display-action-buttons">
+        <button class="style-increment-button" id="increment-button1-h">+1</button>
+        <button class="style-increment-button" id="increment-button2-h">+2</button>
+        <button class="style-increment-button" id="increment-button3-h">+3</button>
+    </div>
+
+</div>
+
+
+<div class="middleImage">
+   <img data-aos="zoom-in" src="https://cdn-icons-png.flaticon.com/512/889/889455.png" class="style-basketball-image" />
+   <p class="styleMiddleText">JavaScript - Counter</p>
+
+   <div class="display-buttons">
+   <button class="strBtnGame" id="start_game">Start game</button>
+   <button class="strBtnGame" id="stop_game">Stop game</button>
+   <button class="strBtnGame" id="reset_game">Reset game</button>
+   </div>
+
+
+</div>
+
+<!-- HOME SCOREBOARD -->
+<div class="display-left" data-aos="fade-left">
+
+    <h2 class="style-main-title">GUEST</h2>
+    <div class="display-score-box" id="score_box">
+        <h2 class="style-score-number" id="score-number_1">0</h2>
+    </div>
+
+    <div class="display-action-buttons">
+        <button class="style-increment-button" id="increment-button1-g">+1</button>
+        <button class="style-increment-button" id="increment-button2-g">+2</button>
+        <button class="style-increment-button" id="increment-button3-g">+3</button>
+    </div>
+
+</div>
+
+</div>
+
+<div class="style-leader-text" id="display-leader-text"></div>
+
+<div class="display-timer" id="time">00:00:00</div>
+<p class="styleInfoText">You can't increment scores until you start the game, and while you're stoping and reseting the score</p>
+
+</body>
+<script type="module" src="./index.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0C4A6E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.displayMainScore{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "CustomFont1";
+    src: url("CursedTimerULiL.ttf");
+    src: url("CursedTimerULiL.ttf") format("ttf"),
+    url("CursedTimerULiL.ttf") format("opentype"),
+    url("CursedTimerULiL.ttf") format("svg");
+}
+
+.display-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-score-box, .display-score-box_1{
+    width: 155px;
+    height: 120px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.style-main-title{
+    font-size: 40px;
+    color: white;
+}
+
+.style-increment-button{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #9AABD8;
+    color: #9AABD8;
+    background-color: #0C4A6E;
+}
+
+.display-action-buttons{
+    margin-top: 1em;
+}
+
+.style-score-number{
+    color: #F94F6D;
+    font-family: 'CustomFont1';
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.middleImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.style-basketball-image{
+    width: 35%;
+    margin: 0 auto;
+}
+
+
+
+.styleMiddleText{
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+}
+
+.style-leader-text{
+    text-align: center;
+    margin: 3em;
+    font-size: 1.5em;
+    color: white;
+}
+
+.leading-highlight{
+    box-shadow: 3px 5px 6px blue;
+}
+
+.leading-highlight1{
+    box-shadow: 3px 5px 6px rgb(249, 62, 10);
+}
+
+
+.display-timer{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+.strBtnGame{
+    padding: 0.4em;
+    width: 10em;
+    border: 1px solid #9AABD8;
+    background-color: #0C4A6E;
+    color: #9AABD8;
+    cursor: pointer;
+}
+
+.styleInfoText{
+    text-align: center;
+    font-size: 1.2em;
+    color: #9AABD8;
+    font-weight: bolder;
+    font-style: oblique;
+    text-decoration: underline;
+}
